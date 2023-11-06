@@ -74,10 +74,21 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    loaded = true,
+    path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  MatchTagAlways = {
+    loaded = true,
+    path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/MatchTagAlways",
+    url = "https://github.com/Valloric/MatchTagAlways"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -114,10 +125,20 @@ _G.packer_plugins = {
     path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -134,6 +155,16 @@ _G.packer_plugins = {
     path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["tagalong.vim"] = {
+    loaded = true,
+    path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/tagalong.vim",
+    url = "https://github.com/AndrewRadev/tagalong.vim"
+  },
+  tagbar = {
+    loaded = true,
+    path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/tagbar",
+    url = "https://github.com/preservim/tagbar"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -144,14 +175,47 @@ _G.packer_plugins = {
     path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-closetag"] = {
+    loaded = true,
+    path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/vim-closetag",
+    url = "https://github.com/alvan/vim-closetag"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-matchup"] = {
+    after_files = { "/Users/hyatt/.local/share/nvim/site/pack/packer/opt/vim-matchup/after/plugin/matchit.vim" },
+    loaded = true,
+    needs_bufread = true,
+    path = "/Users/hyatt/.local/share/nvim/site/pack/packer/opt/vim-matchup",
+    url = "https://github.com/andymass/vim-matchup"
+  },
+  ["vim-prettier"] = {
+    loaded = true,
+    path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/vim-prettier",
+    url = "https://github.com/prettier/vim-prettier"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/hyatt/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Setup for: vim-matchup
+time([[Setup for vim-matchup]], true)
+try_loadstring("\27LJ\2\nN\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\0\1\vmethod\npopup!matchup_matchparen_offscreen\6g\bvim\0", "setup", "vim-matchup")
+time([[Setup for vim-matchup]], false)
+time([[packadd for vim-matchup]], true)
+vim.cmd [[packadd vim-matchup]]
+time([[packadd for vim-matchup]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

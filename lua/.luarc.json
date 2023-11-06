@@ -1,0 +1,8 @@
+{
+    "workspace.library": [
+        "/opt/homebrew/Cellar/neovim/0.9.0/share/nvim/runtime/lua",
+        "/Users/hyatt/.config/nvim/lua",
+        "/Users/hyatt/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/40ef1584",
+        "/Users/hyatt/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/77cd456b"
+    ]
+}
